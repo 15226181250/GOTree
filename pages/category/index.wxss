@@ -1,0 +1,105 @@
+page {
+  height: 100%;
+}
+.cates {
+  height: 100%;
+}
+.search_input{
+  height: 90rpx;
+  padding: 10rpx;
+  background-color: var(--themeColor);
+}
+.search_input navigator{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15rpx;
+  color: #666;
+}
+view{
+  color:#000;
+}
+.search_input{
+  height: 90rpx;
+  padding: 10rpx;
+  background-color: var(--themeColor);
+}
+.search_input navigator{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15rpx;
+  color: #666;
+}
+.cates .cates_container {
+  /* less中使用calc的时候要注意 */
+  height: calc( 100vh - 90rpx );
+  display: flex;
+}
+.cates .cates_container .left_menu {
+  /* 子项 高度 100% flex */
+  flex: 2;
+  background-color: var(--themeColor);
+}
+.cates .cates_container .left_menu .logo {
+  margin-top: 50rpx;
+}
+.cates .cates_container .left_menu .logo image{
+  flex: 4;
+  height: 220rpx;
+  border: 13rpx solid var(--themeColor);
+  border-radius: 110rpx;
+  background-color: #fff;
+}
+.cates .cates_container .left_menu .menu_item {
+  height: 90rpx;
+  display: flex;
+  width: 200rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 36rpx;
+  font-weight: 900;
+  background-color: #fff;
+  margin: 10rpx;
+  border-radius: 10rpx;
+}
+.cates .cates_container .left_menu .active {
+  color: #fff;
+  border: 5rpx solid #fff;
+  background-color: var(--themeColor);
+}
+.cates .cates_container .right_content {
+  /* 子项 高度 100% flex */
+  flex: 5;
+}
+.cates .cates_container .right_content .goods_group .goods_title {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 10rpx solid #fff;
+  border-right: 10rpx solid #fff;
+  background-color: var(--themeColor);
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  font-size: 31rpx;
+  font-weight: 600;
+  color: #fff;
+}
+.cates .cates_container .right_content .goods_group .goods_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cates .cates_container .right_content .goods_group .goods_list navigator {
+  width: 33.33%;
+  text-align: center;
+}
+.cates .cates_container .right_content .goods_group .goods_list navigator image {
+  width: 80%;
+  border: 2rpx solid var(--themeColor);
+  border-radius: 10rpx;
+}

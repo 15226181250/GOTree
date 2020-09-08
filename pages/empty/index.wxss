@@ -1,0 +1,17 @@
+.in_image{
+  width: 100%;
+}
+.in_content{
+  border:10rpx solid var(--themeColor);
+  height: 80rpx;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 270rpx;
+  margin-bottom: 100rpx;
+  border-radius: 15rpx;
+  font-size: 38rpx;
+  font-weight: 800;
+  color: var(--themeColor);
+}

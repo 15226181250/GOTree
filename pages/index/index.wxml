@@ -1,0 +1,20 @@
+<view class="search_input">
+  <navigator url="../search/index" open-type="navigate">搜索</navigator>
+</view>
+<view class="search_swiper">
+  <swiper indicator-dots="ture" indicator-color
+indicator-active-color
+autoplay="true" interval="3000" circular="true">
+  <swiper-item wx:for="{{swiper_list}}" wx:key="id"><navigator><image src="{{item.src}}" mode="widthFix"></image></navigator></swiper-item>
+</swiper>
+</view>
+<view class="search_navigator">
+  <navigator wx:for="{{navigator_list}}" wx:key="id" url="{{item.url}}"><image src="{{item.src}}" mode="widthFix"></image></navigator>
+</view>
+<view class="out_floor">
+  <view class="floor_title" wx:for="{{title_list}}" wx:key="{{item.id}}"><image src="{{item.src}}" mode="widthFix"></image>
+  </view>
+  <view class="floor_list">
+    <navigator wx:for="{{list_one}}" wx:key="{{item.id}}" url="/pages/goods_detail/index?cid={{item.cat_id}}&cname={{item.name}}&cimage={{item.src}}&cprince={{item.prince}}&author={{item.author}}&version={{item.version}}&original={{item.original}}&publish={{item.publish}}&type={{item.type}}"><image src="{{item.src}}" mode="widthFix"></image></navigator>
+  </view>
+</view>

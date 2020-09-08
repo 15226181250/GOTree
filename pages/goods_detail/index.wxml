@@ -1,0 +1,54 @@
+<view class="detail_swiper">
+  <swiper
+  autoplay
+  circular
+  bindtap="handleBigImage"
+  >
+    <swiper-item>
+    <image mode="widthFix" src="{{goods_src}}" ></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="goods_price">￥{{goods_prince}}<view class="aaa">{{(goods_type==="二手书")?goods_type+goods_discount+'折':goods_type}}</view></view>
+<view class="goods_name_row">
+  <view class="goods_name">{{goods_name}}</view>
+  <view class="goods_collect" bindtap="handleCollect" >
+    <text class="iconfont {{isCollect?'icon-shoucang1':'icon-shoucang'}}"></text>
+    <view class="collect_text">收藏</view>
+  </view>
+</view>
+
+<view class="goods_info">
+  <view class="goods_info_title">详细信息</view>
+  <view class="goods_info_content">
+    <view>作  者：{{goods_author}}</view>
+    <view>原  价：{{goods_original}}</view>
+    <view>出版社：{{goods_publish}}</view>
+    <view>版  次：{{goods_version}}</view>
+  </view>
+  <view class="end">南工购书就选GO树,送货上门不必出门</view>
+</view>
+
+<view class="btm_tool">
+  <view class="tool_item">
+    <view class="iconfont icon-kefu"></view>
+    <view>客服</view>
+    <button open-type="contact"></button>
+  </view>
+  <view class="tool_item">
+    <view class="iconfont icon-yixianshi-"></view>
+    <view>分享</view>
+    <button open-type="share"></button>
+  </view>
+  <navigator open-type="switchTab" url="/pages/cart/index" class="tool_item">
+    <view class="iconfont icon-gouwuche"></view>
+    <view>购物车</view>
+  </navigator>
+  <view class="tool_item btn_cart " bindtap="handleCartAdd">
+  加入购物车
+  </view>
+  <view class="tool_item btn_buy" bindtap="handleBuy">
+    <navigator open-type="switchTab" url="/pages/cart/index">立即购买</navigator>
+  </view>
+</view>

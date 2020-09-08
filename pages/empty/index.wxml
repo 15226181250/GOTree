@@ -1,0 +1,7 @@
+<view class="out">
+  <view class="in_image">
+    <image mode="widthFix" src="https://s1.ax1x.com/2020/09/07/wurIQx.jpg"></image>
+  </view>
+  <view class="in_content">
+  <navigator url="/pages/index/index" open-type="switchTab">去首页</navigator></view>
+</view>

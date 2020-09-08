@@ -1,0 +1,10 @@
+<view class="out">
+  <view class="in_image">
+    <image mode="widthFix" src="https://s1.ax1x.com/2020/09/08/wMpf0I.jpg"></image>
+  </view>
+
+  <view class="in_content">
+    <view>点我将支付成功截屏发给客服</view>
+    <button open-type="contact"></button>
+  </view>
+</view>

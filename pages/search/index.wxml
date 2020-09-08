@@ -1,0 +1,24 @@
+<view class="search_row">
+  <input value="{{inpValue}}" placeholder="请输入您要搜索的书本的全称（如：离散数学）" bindinput="handleInput"> </input>
+  <button bindtap="handleCancel" hidden="{{!isFocus}}">取消</button>
+</view>
+<view class="search_content">
+  <!-- <navigator url="/pages/goods_detail/index?goods_id={{goods.cat_id}}" class="search_item">
+  <image src="{{goods.src}}"></image>
+    {{goods.name}}
+  </navigator> -->
+  <!-- 商品图片 -->
+  <view class="other">
+    <navigator open-type="navigate" class="cart_img_wrap" url="/pages/goods_detail/index?cid={{goods.cat_id}}&author={{goods.author}}&original={{goods.original}}&cimage={{goods.src}}&type={{goods.type}}&publish={{goods.publish}}&version={{goods.version}}&cprince={{goods.prince}}&cname={{goods.name}}" class="search_item">
+    <view class="image"><image mode="widthFix" src="{{goods.src}}"></image></view>
+    <view class="cart_info_wrap">
+      <view class="goods_name">{{goods.name}}</view>
+      <view class="goods_price_wrap">
+        <view class="goods_price">{{(goods.prince?"￥":" ")+(goods.prince?goods.prince:" ")}}</view>
+      </view>
+    </view>
+    </navigator>
+  </view>
+  <!-- 商品信息 -->
+  
+</view> 
